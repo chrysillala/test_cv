@@ -1,0 +1,135 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#circle {
+	background: #f00;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: right;
+    margin: 5px;
+}
+
+/* CARD */
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	width: 700px;
+	border: 1px solid #0D47A1;
+	border-radius: 4px;
+	overflow: hidden;
+	/* children use flexbox*/
+	display: inline-flex;
+	/* rotate axis, flexbos default is row/horizontal */
+	flex-direction: column;
+	margin: 5px;
+}
+
+.card-header {
+	color: #1565C0;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #0D47A1;
+	background-color: #E3F2FD;
+	padding: 5px 10px;
+}
+
+.card-main {
+	display: flex;
+	flex-direction: column;
+	/* group children in center, horizontal */
+	justify-content: center;
+	/* group children in center, vertical */
+	align-items: center;
+	padding: 15px 0;
+}
+
+.exp .fa {
+	color: #1565C0;
+	margin-bottom: 5px;
+}
+
+.card-desc {
+	color: #1565C0;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.card-job-desc {
+	color: #1565C0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.card-job-desc ul li {
+	list-style: none;
+}
+/* CARD END */
+
+/* SLICK SLIDER */
+.slider {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+	margin: 0px 20px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: black;
+}
+
+
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
+}
+
+.slick-active {
+	opacity: .5;
+}
+
+.slick-current {
+	opacity: 1;
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slick-prev {
+	left: 0;
+	z-index: 999;
+}
+/* SLICK SLIDER END */
